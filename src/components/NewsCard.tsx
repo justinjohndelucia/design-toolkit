@@ -1,6 +1,8 @@
 import { Bookmark, BookmarkCheck } from 'lucide-react';
 import type { CSSProperties } from 'react';
+import { useState } from 'react';
 import type { Article } from '../types';
+import { useArticleImage } from '../hooks/useArticleImage';
 import './NewsCard.css';
 
 interface NewsCardProps {
@@ -14,6 +16,9 @@ interface NewsCardProps {
 }
 
 export function NewsCard({ article, gradient, featured, wide, saved, delay, onToggleSave }: NewsCardProps) {
+  const { src, onError } = useArticleImage(article);
+  const [loaded, setLoaded] = useState(false);
+
   const classNames = [
     'dos-news-card',
     featured && 'dos-news-card--featured',
@@ -27,13 +32,19 @@ export function NewsCard({ article, gradient, featured, wide, saved, delay, onTo
     '--pal': gradient,
   };
 
-  const thumbStyle: CSSProperties = article.thumbnail
-    ? { backgroundImage: `url(${article.thumbnail})` }
-    : {};
-
   return (
     <article className={classNames} style={style}>
-      <div className="dos-news-card__thumb" style={thumbStyle}>
+      <div className="dos-news-card__thumb">
+        {src && (
+          <img
+            className={`dos-news-card__thumb-img${loaded ? ' dos-news-card__thumb-img--loaded' : ''}`}
+            src={src}
+            alt=""
+            loading="lazy"
+            onLoad={() => setLoaded(true)}
+            onError={onError}
+          />
+        )}
         <span className="dos-news-card__category">{article.category}</span>
         <button
           type="button"
