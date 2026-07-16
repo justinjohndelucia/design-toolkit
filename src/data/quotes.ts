@@ -1,8 +1,31 @@
-export const QUOTES = [
-  'Design is not just what it looks like and feels like. Design is how it works.',
-  'Simplicity is the ultimate sophistication — earn every element on the screen.',
-  'The details are not the details. They make the design.',
-  'Good design is as little design as possible.',
-  'Make the right thing easy and the wrong thing hard.',
-  'Taste is knowing what to leave out.',
+import type { Quote } from '../types';
+
+/** Design-leadership quotes, past and present, biased toward inspiration over trivia. */
+export const QUOTES: Quote[] = [
+  { id: 'q1', text: 'Design is not just what it looks like and feels like. Design is how it works.', author: 'Steve Jobs' },
+  { id: 'q2', text: 'Good design is as little design as possible.', author: 'Dieter Rams' },
+  { id: 'q3', text: 'Less, but better.', author: 'Dieter Rams' },
+  { id: 'q4', text: 'The details are not the details. They make the design.', author: 'Charles Eames' },
+  { id: 'q5', text: 'Design depends largely on constraints.', author: 'Charles Eames' },
+  { id: 'q6', text: 'Design is the silent ambassador of your brand.', author: 'Paul Rand' },
+  { id: 'q7', text: "Don't try to be original, just try to be good.", author: 'Paul Rand' },
+  { id: 'q8', text: 'Design is one of the most powerful tools with which to improve the world.', author: 'Massimo Vignelli' },
+  { id: 'q9', text: 'The life of a designer is a life of fight against the ugliness.', author: 'Massimo Vignelli' },
+  { id: 'q10', text: 'There are three responses to a piece of design – yes, no, and WOW!', author: 'Milton Glaser' },
+  { id: 'q11', text: 'Style is not to be trusted.', author: 'Milton Glaser' },
+  { id: 'q12', text: 'True simplicity is derived from so much more than just the absence of clutter.', author: 'Jony Ive' },
+  { id: 'q13', text: 'Design is really an act of communication above all else.', author: 'Don Norman' },
+  { id: 'q14', text: 'Simplicity is about subtracting the obvious and adding the meaningful.', author: 'John Maeda' },
+  { id: 'q15', text: 'Design is a plan for arranging elements to best accomplish a particular purpose.', author: 'Debbie Millman' },
+  { id: 'q16', text: 'Design is a journey, not a blueprint you fully commit to at the start.', author: 'Frank Chimero' },
+  { id: 'q17', text: 'People ignore design that ignores people.', author: 'Frank Chimero' },
+  { id: 'q18', text: "Good design is not about what medium you use — it's about thinking.", author: 'Naoto Fukasawa' },
+  { id: 'q19', text: 'Design thinking is a human-centered approach to innovation.', author: 'Tim Brown' },
+  { id: 'q20', text: 'Great design is about solving the right problem, not just making things pretty.', author: 'Julie Zhuo' },
+  { id: 'q21', text: 'Good design goes to heaven; bad design goes everywhere.', author: 'Yves Béhar' },
+  { id: 'q22', text: 'Design is thinking made visual.', author: 'Saul Bass' },
+  { id: 'q23', text: 'Design is a way of life, a point of view.', author: 'Ellen Lupton' },
+  { id: 'q24', text: 'Style is a byproduct of a process.', author: 'Paula Scher' },
+  { id: 'q25', text: 'Taste is knowing what to leave out.', author: 'Alexey Brodovitch' },
+  { id: 'q26', text: 'Make the right thing easy and the wrong thing hard.', author: 'Donald Norman' },
 ];

@@ -7,7 +7,7 @@ const NAV_ITEMS = [
   { label: 'Home', target: 'top' as const },
   { label: 'News', target: 'news' as const },
   { label: 'Tools', target: 'tools' as const },
-  { label: 'Resources', target: 'tools' as const },
+  { label: 'Saved', target: 'saved' as const },
   { label: 'Settings', target: 'top' as const },
 ];
 

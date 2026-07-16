@@ -18,3 +18,9 @@ export interface Tool {
 }
 
 export type Theme = 'dark' | 'light';
+
+export interface Quote {
+  id: string;
+  text: string;
+  author: string;
+}

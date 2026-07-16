@@ -1,0 +1,73 @@
+.dos-quote-hero {
+  padding: 44px 4px 28px;
+  animation: fadeUp 0.7s ease both;
+}
+
+.dos-quote-hero__row {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.dos-quote-hero__bar {
+  width: 3px;
+  border-radius: 3px;
+  background: var(--accent);
+  flex: none;
+}
+
+.dos-quote-hero__body {
+  max-width: 720px;
+}
+
+.dos-quote-hero__text {
+  margin: 0;
+  font-family: 'Instrument Serif', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(26px, 4.4vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+  color: var(--text);
+}
+
+.dos-quote-hero__author {
+  margin: 10px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-3);
+}
+
+.dos-quote-hero__actions {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dos-quote-hero__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 13px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-2);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dos-quote-hero__btn:hover {
+  border-color: var(--border-2);
+  color: var(--text);
+}
+
+.dos-quote-hero__btn--active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: var(--accent);
+}
