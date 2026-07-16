@@ -19,14 +19,17 @@
 }
 
 .dos-header__logo {
-  font-family: 'Caveat', cursive;
-  font-size: 32px;
-  line-height: 1;
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
   color: var(--text);
   text-decoration: none;
-  letter-spacing: 0.2px;
   padding-right: 4px;
+}
+
+.dos-header__signature {
+  height: 32px;
+  width: auto;
+  display: block;
 }
 
 .dos-header__actions {

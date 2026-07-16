@@ -1,4 +1,5 @@
 import { Moon, Sun } from 'lucide-react';
+import { SignatureLogo } from '../assets/SignatureLogo';
 import type { Theme } from '../types';
 import './Header.css';
 
@@ -41,7 +42,7 @@ export function Header({ theme, onToggleTheme }: HeaderProps) {
             scrollToTop();
           }}
         >
-          justin delucia
+          <SignatureLogo className="dos-header__signature" aria-label="justin delucia" />
         </a>
         <div className="dos-header__actions">
           <nav className="dos-header__nav">
