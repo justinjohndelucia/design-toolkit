@@ -1,0 +1,161 @@
+.dos-tools {
+  scroll-margin-top: 80px;
+  padding-top: 56px;
+  animation: fadeUp 0.7s 0.1s ease both;
+}
+
+.dos-tools__header {
+  margin-bottom: 18px;
+}
+
+.dos-tools__title-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.dos-tools__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: oklch(0.7 0.1 200);
+  box-shadow: 0 0 12px oklch(0.7 0.1 200);
+}
+
+.dos-tools__title {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.4px;
+}
+
+.dos-tools__subtitle {
+  margin: 6px 0 0;
+  color: var(--text-3);
+  font-size: 14px;
+}
+
+.dos-tools__search-wrap {
+  position: relative;
+  margin-bottom: 26px;
+}
+
+.dos-tools__search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-3);
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.dos-tools__search-input {
+  width: 100%;
+  padding: 16px 96px 16px 46px;
+  border-radius: 16px;
+  border: 1px solid var(--border-2);
+  background: var(--surface);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+  box-shadow: var(--shadow);
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.dos-tools__search-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+.dos-tools__search-kbd-wrap {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 4px;
+  pointer-events: none;
+}
+
+.dos-tools__search-kbd {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-3);
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 4px 8px;
+}
+
+.dos-tools__result-label {
+  margin: -14px 0 20px;
+  font-size: 13px;
+  color: var(--text-3);
+  font-weight: 600;
+}
+
+.dos-tools__groups {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.dos-tools__group-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.dos-tools__group-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.dos-tools__group-rule {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.dos-tools__group-count {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-3);
+}
+
+.dos-tools__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr));
+  gap: 14px;
+}
+
+.dos-tools__empty {
+  padding: 60px 20px;
+  text-align: center;
+  border: 1px dashed var(--border-2);
+  border-radius: 20px;
+  color: var(--text-3);
+}
+
+.dos-tools__empty-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-2);
+}
+
+.dos-tools__empty-body {
+  font-size: 14px;
+  margin-top: 6px;
+}

@@ -1,0 +1,18 @@
+.dos-footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  color: var(--text-3);
+  font-size: 13px;
+}
+
+.dos-footer__script {
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  color: var(--text-2);
+}

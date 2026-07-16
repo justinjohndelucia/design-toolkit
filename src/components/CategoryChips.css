@@ -1,0 +1,32 @@
+.dos-chips {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 4px 4px 12px;
+  margin: 0 -4px 8px;
+}
+
+.dos-chip {
+  flex: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-2);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.dos-chip:hover {
+  border-color: var(--border-2);
+}
+
+.dos-chip--active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: var(--accent);
+}

@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: oklch(0.16 0.006 275);
+  --bg-2: oklch(0.185 0.007 275);
+  --surface: oklch(0.205 0.008 275);
+  --surface-2: oklch(0.245 0.009 275);
+  --border: oklch(1 0 0 / 0.08);
+  --border-2: oklch(1 0 0 / 0.14);
+  --text: oklch(0.97 0.004 275);
+  --text-2: oklch(0.78 0.006 275);
+  --text-3: oklch(0.6 0.007 275);
+  --accent: oklch(0.74 0.11 285);
+  --accent-2: oklch(0.66 0.12 285);
+  --accent-soft: oklch(0.74 0.11 285 / 0.14);
+  --glass: oklch(0.16 0.006 275 / 0.72);
+  --shadow: 0 1px 2px oklch(0 0 0 / 0.4), 0 8px 30px oklch(0 0 0 / 0.28);
+  --shadow-lg: 0 2px 6px oklch(0 0 0 / 0.5), 0 20px 50px oklch(0 0 0 / 0.4);
+  color-scheme: dark;
+}
+
+[data-theme='light'] {
+  --bg: oklch(0.985 0.003 275);
+  --bg-2: oklch(0.965 0.004 275);
+  --surface: oklch(1 0 0);
+  --surface-2: oklch(0.975 0.004 275);
+  --border: oklch(0.2 0.02 275 / 0.1);
+  --border-2: oklch(0.2 0.02 275 / 0.18);
+  --text: oklch(0.22 0.01 275);
+  --text-2: oklch(0.42 0.01 275);
+  --text-3: oklch(0.56 0.01 275);
+  --accent: oklch(0.55 0.14 285);
+  --accent-2: oklch(0.48 0.15 285);
+  --accent-soft: oklch(0.55 0.14 285 / 0.1);
+  --glass: oklch(0.99 0.003 275 / 0.72);
+  --shadow: 0 1px 2px oklch(0.2 0.02 275 / 0.08), 0 8px 30px oklch(0.2 0.02 275 / 0.1);
+  --shadow-lg: 0 2px 6px oklch(0.2 0.02 275 / 0.1), 0 20px 50px oklch(0.2 0.02 275 / 0.16);
+  color-scheme: light;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes floatGrad {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(3%, -4%) scale(1.06);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-2);
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+body {
+  font-family: 'Manrope', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
