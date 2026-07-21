@@ -48,6 +48,7 @@
   position: absolute;
   inset: 0;
   z-index: 1;
+  pointer-events: none;
   background: radial-gradient(circle at 70% 20%, oklch(1 0 0 / 0.14), transparent 60%);
 }
 
@@ -56,6 +57,7 @@
   position: absolute;
   inset: 0;
   z-index: 1;
+  pointer-events: none;
   background: linear-gradient(to top, oklch(0 0 0 / 0.28), transparent 55%);
 }
 
